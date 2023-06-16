@@ -27,15 +27,27 @@
         <form class="drop" action="/action_page.php">
             <label  class ="lbl" for="course">Choose a course</label>
             <br>
-            <select >
+            <select  onchange="javascript:handleSelect(this)">
              <option value="0">select</option>
-              <option value="1"><a target="_blank" href="https://bhavishya556.github.io/AllSem/"> BCA </a></option>
+              <option value=1> <a href="https://bhavishya556.github.io/AllSem/"> BCA</a></option>
             
             </select>
+        
+
+            
            
            
           </form>
     </div>
+    <script type="text/javascript">
+        function handleSelect(elm)
+        {
+           if(elm.value==1){
+            window.open( "https://bhavishya556.github.io/AllSem/");
+           }
+        }
+      </script>
+
 
    
     <div class="footer">
