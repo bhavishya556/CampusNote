@@ -27,22 +27,33 @@
 .home {
     
     text-decoration: none;
-    color:  #4d5b61;
+    color:  white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-weight: 600;
+    font-weight: 500;
+    background-color: #4d5b61;
+    border-radius: 0.5rem;
     
     
     
     font-size: 1rem;
+    margin: 0 auto;
+    padding: 0.3rem;
     
 }
 
 .contact {
-    font-weight: 600;
-    color:  #4d5b61;
+    color:  white;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
+    font-weight: 500;
+    background-color: #4d5b61;
+    border-radius: 0.5rem;
+    
+    
+    
     font-size: 1rem;
+    margin: 0 auto;
+    padding: 0.3rem;
     
     
     
@@ -73,6 +84,13 @@
 
 
 }
+.msg{
+    color: red;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 0.8em;
+    font-style: italic;
+}
+
 
 .bcg {
     height: 100%;
@@ -103,6 +121,7 @@
     
     
 }
+
 .hero{
     height: 89vh;
     width: 100%;
@@ -123,9 +142,25 @@
     height: 70%;
     
 }
+#submitButton{
+    color:  white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+    font-weight: 500;
+    background-color: #4d5b61;
+    border-radius: 0.5rem;
+   
+    
+    
+    font-size: 1rem;
+    margin: 0 auto;
+    padding: 0.3rem;
+    cursor: pointer;
+}
 select {
     
     margin-top: 5%;
+    color: #4d5b61;
   
     
    
@@ -140,6 +175,7 @@ select {
 }
 .lbl{
     font-size: 2.5rem;
+    color: #4d5b61;
 }
 @media screen and (max-width: 600px) {
     
@@ -148,6 +184,14 @@ select {
         
         margin-top: 35%;
     }
+
+    .msg{
+      
+        font-size: 1.4em;
+
+
+    }
+     
     
     
     
