@@ -29,14 +29,20 @@
 
     <div class="hero">
         <img  class ="bcg" src="bcggg.jpg" alt="">
-        <form class="drop" action="/action_page.php">
+        <form class="drop" >
             <label  class ="lbl" for="course">Choose a course</label>
             <br>
-            <select  onchange="javascript:handleSelect(this)">
-             <option value="0">select</option>
-              <option value=1> <a href="https://bhavishya556.github.io/AllSem/"> BCA</a></option>
+            <select  id="clseSelect" onchange="javascript:handleSelect(this)">
+             <option value="0">Select Course</option>
+              <option value="1"> BCA</option>
             
             </select>
+            <br>
+            <p class="msg">
+
+            </p>
+            <br>
+            <button  type="submit" id="submitButton">Sumbit</button>
         
 
             
@@ -44,14 +50,8 @@
            
           </form>
     </div>
-    <script type="text/javascript">
-        function handleSelect(elm)
-        {
-           if(elm.value==1){
-            window.open( "https://bhavishya556.github.io/AllSem/");
-           }
-        }
-      </script>
+    <a href="https://bhavishya556.github.io/AllSem/"> BCA</a>
+    
 
 
    
@@ -81,6 +81,51 @@
     </div>
     
 </div>
+<script type="text/javascript">
+
+function handleSelect(elm)
+        {
+           if(elm.value!=="0"){
+            var msg = document.querySelector('.msg');
+            let txt ="";
+        
+             msg.innerHTML=txt;
+           }
+        }
+
+
+    function redirectToPage() {
+    event.preventDefault(); // Prevent form submission
+
+    // Get the selected option value
+    var clseSelect = document.getElementById('clseSelect');
+    var selectedOption = clseSelect.value;
+
+    // Perform redirection based on the selected option
+    if (selectedOption === '0') {
+
+        //reflect msg
+
+        var msg = document.querySelector('.msg');
+        let txt ="*Please select a course";
+        
+        msg.innerHTML=txt;
+
+
+      
+
+    } else if (selectedOption === '1') {
+      window.location.href = 'https://bhavishya556.github.io/AllSem/';
+    }
+  }
+
+  var submitButton = document.getElementById('submitButton');
+
+// Add event listener for submit button click
+submitButton.addEventListener('click', redirectToPage);
+
+
+</script>
 
     
 </body>
